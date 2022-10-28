@@ -28,6 +28,25 @@ let removeCard = function () {
   teamsField.removeChild(teamsField.lastChild);
 };
 
-let memeNumberUp = function () {};
+let memeNumberUp = function () {
+  parseInt(numberOfTeams.innerText);
+  numberOfTeams.innerText++;
+};
 
-let memeNumberDown = function () {};
+let memeNumberDown = function () {
+  parseInt(numberOfTeams.innerText);
+  numberOfTeams.innerText--;
+};
+
+let assignMember = function () {
+  teamsField.appendChild(peepsField.lastElementChild);
+};
+
+plusButton.addEventListener("click", function () {
+  memeNumberUp();
+  addCard();
+});
+minusButton.addEventListener("click", function () {
+  memeNumberDown();
+  removeCard();
+});

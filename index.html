@@ -17,23 +17,17 @@
         </div>
         <div>
           <input id="namer" type="text" placeholder="Name" />
-          <button onclick="addingName(), memeNumberUp()" class="butt">
-            Add
-          </button>
-          <button
-            onclick="removeCard(), memeNumberDown()"
-            id="minus-butt"
-            class="butt1"
-          >
-            -
-          </button>
-          <span id="team-nb"></span>
-          <button onclick="addCard()" id="plus-butt" class="butt1">+</button>
+          <button class="butt" onclick="addingName()">Add</button>
+          <button id="minus-butt" class="butt1">-</button>
+          <span id="team-nb">0</span>
+          <button id="plus-butt" class="butt1">+</button>
         </div>
         <div class="card"></div>
         <div>
-          <button class="butt2">Assign Member</button>
-          <button class="butt3">Reset</button>
+          <button onclick="assignMember()" class="butt2">Assign Member</button>
+          <button onClick="window.location.reload();" class="butt3">
+            Reset
+          </button>
         </div>
       </div>
 
