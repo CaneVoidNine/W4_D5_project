@@ -12,7 +12,7 @@ h1 {
   justify-content: space-between;
 }
 .nav h3:last-of-type {
-  margin-right: 10rem;
+  margin-right: 8rem;
 }
 .left {
   display: flex;
@@ -27,17 +27,18 @@ h1 {
   max-width: 50rem;
 }
 #namer {
-  width: 20rem;
-  height: 3rem;
+  width: 25rem;
+  height: 2.5rem;
   border-radius: 5px;
   margin-right: 0;
+  border: 1px solid rgba(71, 71, 71, 0.208);
 }
 .butt {
-  margin-left: 1rem;
+  margin-left: -3rem;
   width: 5rem;
-  height: 3.5rem;
+  height: 2.77rem;
   background-color: #697cf7;
-  border-radius: 10px 10px;
+  border-radius: 0 10px 10px 0;
   border-left: none;
 }
 .butt1 {
@@ -49,36 +50,35 @@ h1 {
 }
 
 #team-nb {
-  margin-left: 1rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
 }
 .card {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  border: 1px solid rgba(71, 71, 71, 0.208);
   border-radius: 5px;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  height: 25rem;
-  width: 35.5rem;
+  height: 30rem;
+  width: 39.7rem;
   box-shadow: inset 0px 0px 22px -11px rgba(66, 68, 90, 1);
 }
 .card p {
+  width: 90%;
+  padding-bottom: 1rem;
   margin-left: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.395);
 }
-
-hr {
-  border: 0;
-  clear: both;
-  display: block;
-  width: 96%;
-  background-color: grey;
-  height: 1px;
+.card p:last-of-type {
+  border-bottom: none;
 }
 
 .butt2 {
   background-color: #697cf7;
   border-radius: 10px 10px;
-  width: 30rem;
+  width: 32.5rem;
   height: 3rem;
 }
 
@@ -96,21 +96,26 @@ button {
   margin-left: 2rem;
 }
 .teammembers {
+  margin-right: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
-  width: 80%;
+  width: 10rem;
+  height: 15rem;
   background-color: transparent;
   border: 1px solid rgba(71, 71, 71, 0.208);
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.253);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.255);
   padding-inline: 8%;
   padding-block: 2%;
 }
+.teammembers p:first-of-type {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.395);
+}
 .teammembers p {
   text-align: start;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.395);
   padding-bottom: 5%;
 }
 button:hover {
   cursor: pointer;
+  box-shadow: 0px 0px 10px 0px rgba(105, 124, 247, 1);
 }
