@@ -17,54 +17,27 @@
         </div>
         <div>
           <input id="namer" type="text" placeholder="Name" />
-          <button class="butt">Add</button>
-          <button class="butt1">-</button>
-          <span id="team-nb">3</span>
-          <button class="butt1">+</button>
+          <button onclick="addingName(), memeNumberUp()" class="butt">
+            Add
+          </button>
+          <button
+            onclick="removeCard(), memeNumberDown()"
+            id="minus-butt"
+            class="butt1"
+          >
+            -
+          </button>
+          <span id="team-nb"></span>
+          <button onclick="addCard()" id="plus-butt" class="butt1">+</button>
         </div>
-        <div class="card">
-          <p>Tim</p>
-          <hr />
-          <p>Poggers</p>
-          <hr />
-          <p>Kek</p>
-          <hr />
-          <p>Froge</p>
-          <hr />
-          <p>Peppe</p>
-          <hr />
-          <p>Raul</p>
-        </div>
+        <div class="card"></div>
         <div>
           <button class="butt2">Assign Member</button>
           <button class="butt3">Reset</button>
         </div>
       </div>
 
-      <div class="right">
-        <div class="team">
-            <h2>Team 1</h2>
-            <div class="teammembers">
-              <p>Tim</p>
-              <p>Peppe</p>
-            </div>
-          </div>
-          <div class="team">
-            <h2>Team 2</h2>
-            <div class="teammembers">
-              <p>Raul</p>
-              <p>Poggers</p>
-            </div>
-          </div>
-          <div class="team">
-            <h2>Team 3</h2>
-            <div class="teammembers">
-              <p>Froge</p>
-              <p>Kek</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="right"></div>
     </div>
 
     <script src="scripts.js"></script>
